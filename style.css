@@ -1,0 +1,49 @@
+/* General Page Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+    height: 100svh;
+    background-color: white;
+}
+
+#wrapper {
+  height: 100%;
+}
+
+/* Top Half Styles */
+#top-half {
+    background: linear-gradient(#f9fbfd, #fdf2ff);
+    height: 60%
+}
+
+#name-title {
+    font-family: "Roboto Mono", monospace;
+}
+
+
+/* Bottom Half Styles */
+#bottom-half {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#footer-icons {
+  margin: 20px;
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: auto;
+}
+
+#footer-icons img {
+  width: 3.5svw;
+  min-width: 45px;
+  margin: 0 10px;
+}
