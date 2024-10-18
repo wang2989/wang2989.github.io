@@ -1,27 +1,42 @@
 /* General Page Styles */
-
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto Mono", monospace;
 }
 
 html, body{
     height: 100svh;
-    background-color: white;
+    background-color: #f9fbfd;
 }
 
 #wrapper {
   height: 100%;
 }
 
+
 /* Top Half Styles */
 #top-half {
-    background: linear-gradient(#f9fbfd, #fdf2ff);
-    height: 60%
+    /* background: linear-gradient(#f9fbfd, #f8e5fc, #f9fbfd, #f8e5fc); */
+    background: linear-gradient(#fcecff, #f9fbfd, #fcecff, #f9fbfd);
+    /* background: linear-gradient(#f9fbfd, red, #f9fbfd, red); */
+    background-size: 100% 300%;
+    height: 60%;
+    animation: gradient 20s linear infinite;
 }
 
-#name-title {
-    font-family: "Roboto Mono", monospace;
+@keyframes gradient {
+  0% {
+    background-position: top;
+  }
+
+  50% {
+    background-position: center;
+  }
+
+  100% {
+    background-position: bottom;
+  }
 }
 
 
@@ -33,6 +48,12 @@ html, body{
   justify-content: space-between;
 }
 
+#description-block {
+  padding-top: 30px;
+  width: 75%;
+  align-self: center;
+}
+
 #footer-icons {
   margin: 20px;
   float: right;
@@ -40,10 +61,11 @@ html, body{
   justify-content: flex-end;
   align-items: center;
   height: auto;
+  flex-wrap: wrap;
 }
 
 #footer-icons img {
   width: 3.5svw;
   min-width: 45px;
-  margin: 0 10px;
+  margin: 5px 15px;
 }
