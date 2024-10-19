@@ -14,15 +14,21 @@ html, body{
   height: 100%;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 
 /* Top Half Styles */
 #top-half {
     /* background: linear-gradient(#f9fbfd, #f8e5fc, #f9fbfd, #f8e5fc); */
     background: linear-gradient(#fcecff, #f9fbfd, #fcecff, #f9fbfd);
-    /* background: linear-gradient(#f9fbfd, red, #f9fbfd, red); */
-    background-size: 100% 300%;
-    height: 60%;
+    /* background: linear-gradient(45deg, #f9fbfd, red, #f9fbfd, red); */
+    background-size: 300% 300%;
+    height: 50%;
     animation: gradient 20s linear infinite;
+    /* border-bottom: 2px solid grey; */
 }
 
 @keyframes gradient {
@@ -39,24 +45,42 @@ html, body{
   }
 }
 
+#name-header {
+  padding: 30px 70px;
+}
+
+#name-header p {
+  margin: 10px 0;
+  /* font-weight: 400; */
+  letter-spacing: 1px;
+}
+
+.name-title {
+  font-size: 50px;
+  font-weight: 460;
+}
+
+.descriptor-title {
+  font-size: 30px;
+  padding-left: 15px;
+  transition: padding-left .75s ease, font-weight .75s ease;
+}
+
+.descriptor-title:hover {
+  padding-left: 60px;
+  font-weight: bold;
+}
 
 /* Bottom Half Styles */
 #bottom-half {
-  height: 40%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-#description-block {
-  padding-top: 30px;
-  width: 75%;
-  align-self: center;
-}
-
 #footer-icons {
-  margin: 20px;
-  float: right;
+  margin: 10px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -68,4 +92,17 @@ html, body{
   width: 3.5svw;
   min-width: 45px;
   margin: 5px 15px;
+}
+
+/* About Section */
+#description-block {
+  padding-top: 60px;
+  width: 75%;
+  align-self: center;
+  font-size: 20px;
+}
+
+.text-subheader {
+  font-size: 24px;
+  font-weight: bold;
 }
